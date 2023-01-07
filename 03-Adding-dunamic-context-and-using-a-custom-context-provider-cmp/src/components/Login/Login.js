@@ -15,7 +15,7 @@ const emailReducer = (state, action) => {
   }
   if(action.type === 'INPUT_BLUR') {
     return (
-      {value: state.val, isValid: state.value.includes('@')}
+      {value: state.value, isValid: state.value.includes('@')}
     );
   }
 
@@ -32,7 +32,7 @@ const passwordReducer = (state, action) => {
   }
   if(action.type === 'INPUT_BLUR') {
     return (
-      {value: state.val, isValid: state.value.trim().length > 6}
+      {value: state.value, isValid: state.value.trim().length > 6}
     );
   }
 
